@@ -1,0 +1,45 @@
+# 创建文件夹/文件命令
+ 
+## `mkdir` 只能**创建目录（文件夹）**，不能创建普通文件。
+
+## 创建文件应该用什么
+
+### 1) 创建空文件（最常用）
+
+```bash
+touch filename.txt
+```
+
+### 2) 创建文件并写入内容
+
+```bash
+echo "hello" > filename.txt
+```
+
+* `>` 覆盖写入（文件不存在会创建；存在会覆盖）
+* 追加用 `>>`：
+
+```bash
+echo "more" >> filename.txt
+```
+
+### 3) 交互式输入创建（直到你按 Ctrl+D 结束）
+
+```bash
+cat > filename.txt
+```
+
+### 4) 一次性创建目录 + 文件
+
+```bash
+mkdir -p mydir && touch mydir/file.txt
+```
+
+### 5) macOS Finder 等价
+
+* 新建文件夹：Finder 里新建
+* 新建空文件：Finder 默认不直接提供“空文件”，用 Terminal 的 `touch` 更快
+
+### English summary
+
+No—`mkdir` creates directories only, not files. To create a file use `touch file.txt` (empty) or `echo "text" > file.txt` (create/write). You can chain: `mkdir -p dir && touch dir/file.txt`.
