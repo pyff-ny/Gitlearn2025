@@ -1,4 +1,5 @@
 # Gitlearn2025
+Notes generated with the assistance of AI (ChatGPT)
 
 下面是“从 0 开始，把本地一个文件夹推到 GitHub”的标准步骤（macOS/Windows 都通用；命令行以 bash/zsh 为例）。你照做即可，不需要任何前置仓库。
 
